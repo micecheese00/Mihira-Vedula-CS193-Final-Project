@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="NgT4wa2wFQHF6tAp_IPf">
+    <mxGraphModel dx="759" dy="487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-11" edge="1" parent="1" source="xMhgUSmMZY-jIrBgT-Lf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="xMhgUSmMZY-jIrBgT-Lf-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Start" vertex="1">
+          <mxGeometry height="40" width="160" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="import ArrayList&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;import Random class&lt;/span&gt;&lt;/div&gt;&lt;div&gt;import io.BuffeerdReader class&lt;/div&gt;&lt;div&gt;import io.FileReader class&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="220" x="330" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="int wordsDone = 0&lt;div&gt;int score = 0&lt;/div&gt;&lt;div&gt;initialize ArrayList words&lt;/div&gt;&lt;div&gt;initialize ArrayList definitions&lt;/div&gt;&lt;div&gt;boolean invalid&amp;nbsp; = false&lt;/div&gt;&lt;div&gt;initialize Random object.&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="240" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;" value="BufferedReader: read file until line==null.&lt;div&gt;Each line split. add to temp array. index 0 of it add to ArrayList words. Index 1 of it add to ArrayList definitions&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="205" x="330" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ArrayList words&lt;div&gt;ArrayList definitions&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.229;entryY=0.22;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="560" as="sourcePoint" />
+            <mxPoint x="351.20000000000005" y="597.4000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-28" connectable="0" parent="xMhgUSmMZY-jIrBgT-Lf-27" style="edgeLabel;resizable=0;html=1;inheritText=1;;align=center;verticalAlign=middle;defaultLabelBackgroundColor=page;" value="words and definitions read from the file are input to the conditional" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-85" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-29" edge="1" parent="1" source="xMhgUSmMZY-jIrBgT-Lf-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.939;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=none;startFill=0;" target="xMhgUSmMZY-jIrBgT-Lf-23">
+          <mxGeometry relative="1" x="-0.0008" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="if words.size() &amp;lt; 15 set invalid = true" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-38" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" x="0.1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="840" />
+            </Array>
+            <mxPoint x="480" y="660" as="sourcePoint" />
+            <mxPoint x="360" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="for every index of words, if word.length() &amp;lt; 3 set invalid= true" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="If invalid, print &quot;Vocab list invalid&quot;&amp;nbsp;&lt;div&gt;return&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-42" edge="1" parent="1" source="xMhgUSmMZY-jIrBgT-Lf-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;startArrow=none;startFill=0;" target="xMhgUSmMZY-jIrBgT-Lf-41" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="840" as="sourcePoint" />
+            <mxPoint x="560" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-44" edge="1" parent="1" source="xMhgUSmMZY-jIrBgT-Lf-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;endArrow=none;endFill=0;" target="xMhgUSmMZY-jIrBgT-Lf-43" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-41" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" value="Else:&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;While wordsDone &amp;lt;= 15:&amp;nbsp;&lt;/div&gt;&lt;div&gt;initialize String called shuffled&lt;/div&gt;&lt;div&gt;&amp;nbsp;for each word in the words array list,&amp;nbsp;&lt;/div&gt;&lt;div&gt;for each character, store in a word array.&amp;nbsp;&lt;/div&gt;&lt;div&gt;use shuffle function in Collections class to jumble letters&lt;/div&gt;&lt;div&gt;convert character array back into string called shuffled&lt;/div&gt;&lt;div&gt;IO.readln() user input&lt;/div&gt;&lt;div&gt;if user input .equals(shuffled): points++&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="395" width="660" x="520" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="xMhgUSmMZY-jIrBgT-Lf-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" value="IO.println() : Game end&lt;div&gt;&quot;Points: &quot; + points + &quot; / &quot; + words.size()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="102.5" width="260" x="800" y="1397.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
