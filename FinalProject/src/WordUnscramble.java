@@ -12,9 +12,19 @@ void main() {
 
         String line;
         while((line = br.readLine()) != null) {
+            if (line.trim().equals("")) {
+                continue;
+            }
             String[] lineArray = line.split(" ");
-            words.add(lineArray[0]);
-            definitions.add(lineArray[1]);
+            if (lineArray[0].length() > 3 && lineArray.length == 2) {
+                words.add(lineArray[0]);
+                definitions.add(lineArray[1]);
+            }
+
+        }
+        if (words.size() == 0) {
+            IO.println("Invalid File");
+            return;
         }
     } catch (IOException e) {
         e.printStackTrace();
