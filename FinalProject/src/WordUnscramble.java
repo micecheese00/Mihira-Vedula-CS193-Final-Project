@@ -6,9 +6,8 @@ import java.util.Collections;
 
 
 void main() {
-    ArrayList<String> words = new ArrayList<String>();
-    ArrayList<String> definitions = new ArrayList<String>();
-    ArrayList<String> scrambledWords = new ArrayList<String>();
+    ArrayList<String> wordsList = new ArrayList<>();
+    ArrayList<String> definitionsList = new ArrayList<>();
 
     int countOfWords = 0;
     int points = 0;
@@ -22,33 +21,39 @@ void main() {
             }
             String[] lineArray = line.split(" ");
             if (lineArray[0].length() > 3 && lineArray.length == 2) {
-                words.add(lineArray[0]);
-                definitions.add(lineArray[1]);
+                wordsList.add(lineArray[0]);
+                definitionsList.add(lineArray[1]);
             }
 
         }
-        if (words.size() == 0) {
+        if (wordsList.size() == 0) {
             IO.println("Invalid File");
             return;
         }
     } catch (IOException e) {
-        e.printStackTrace();
+        IO.println("Unable to open file.");
     } catch (Exception e) {
-        e.printStackTrace();
+        IO.println("Unable to open file.");
     }
-    //game loop starts below
-    while(countOfWords < 15) {
+    // game loop starts below
+    while(countOfWords < 15 && countOfWords < wordsList.size()) {
+        if (countOfWords == wordsList.size() - 1 ) {
+            IO.println("Game Over.");
+            IO.println("Points: " + points + "/" + wordsList.size());
+            return;
+        }
 
-        String scrambledWord = scrambleWord(words.get(countOfWords));
+        String scrambledWord = scrambleWord(wordsList.get(countOfWords));
 
-        IO.println("Definition: " + definitions.get(countOfWords));
+        IO.println("\nDefinition: " + definitionsList.get(countOfWords));
         IO.println(scrambledWord);
 
-        String userAnswer = IO.readln("Enter your guess here: ");
+        String userAnswer = IO.readln("Enter your guess here: \n");
 
-        if (userAnswer.trim().toLowerCase().equals(words.get(countOfWords).toLowerCase())) {
+        if (userAnswer.trim().toLowerCase().equals(wordsList.get(countOfWords).toLowerCase())) {
             points++;
         }
+
         countOfWords++;
 
     }
