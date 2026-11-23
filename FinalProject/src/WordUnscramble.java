@@ -11,6 +11,7 @@ void main() {
     ArrayList<String> scrambledWords = new ArrayList<String>();
 
     int countOfWords = 0;
+    int points = 0;
 
     try (BufferedReader br = new BufferedReader(new FileReader("dictionary.txt"))) {
 
@@ -36,13 +37,28 @@ void main() {
         e.printStackTrace();
     }
 
-//    int i = 0;
-//    while(i < 15) {
-//        String scrambledWord = scrambleWord(words.get(i));
-//
-//    }
+    while(countOfWords < 15) {
+
+        String scrambledWord = scrambleWord(words.get(countOfWords));
+
+        IO.println("Definition: " + definitions.get(countOfWords));
+        IO.println(scrambledWord);
+
+        String userAnswer = IO.readln("Enter your guess here: ");
+
+        if (userAnswer.trim().toLowerCase().equals(words.get(countOfWords).toLowerCase())) {
+            points++;
+        }
+        countOfWords++;
+
+    }
 
 }
+// This method scrambles the letters in a word given as the argument
+// using the shuffle method from the Collections class
+//
+// Parameter: String, a word that needs to be scrambled
+// Return: String, scrambled up form of word
 public String scrambleWord(String word) {
     ArrayList<Character> letters = new ArrayList<>();
     String scrambledWord = "";
