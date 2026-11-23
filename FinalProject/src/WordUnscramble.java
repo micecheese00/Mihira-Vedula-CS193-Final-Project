@@ -36,7 +36,7 @@ void main() {
     } catch (Exception e) {
         e.printStackTrace();
     }
-
+    //game loop starts below
     while(countOfWords < 15) {
 
         String scrambledWord = scrambleWord(words.get(countOfWords));
@@ -54,9 +54,9 @@ void main() {
     }
 
 }
+
 // This method scrambles the letters in a word given as the argument
 // using the shuffle method from the Collections class
-//
 // Parameter: String, a word that needs to be scrambled
 // Return: String, scrambled up form of word
 public String scrambleWord(String word) {
