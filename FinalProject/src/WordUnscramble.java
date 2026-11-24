@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-
+// CS193 Final Project
+// Spanish Word Unscrambling Game
+// @version 11/24/2026
+// @author Mihira Vedula
 void main() {
     ArrayList<String> wordsList = new ArrayList<>();
     ArrayList<String> definitionsList = new ArrayList<>();
