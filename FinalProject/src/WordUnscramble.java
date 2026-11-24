@@ -32,16 +32,13 @@ void main() {
         }
     } catch (IOException e) {
         IO.println("Unable to open file.");
+        return;
     } catch (Exception e) {
         IO.println("Unable to open file.");
+        return;
     }
     // game loop starts below
     while(countOfWords < 15 && countOfWords < wordsList.size()) {
-        if (countOfWords == wordsList.size() - 1 ) {
-            IO.println("Game Over.");
-            IO.println("Points: " + points + "/" + wordsList.size());
-            return;
-        }
 
         String scrambledWord = scrambleWord(wordsList.get(countOfWords));
 
@@ -57,6 +54,8 @@ void main() {
         countOfWords++;
 
     }
+    IO.println("Game Over!");
+    IO.println("Your score: " + points + "/" + 15);
 
 }
 
