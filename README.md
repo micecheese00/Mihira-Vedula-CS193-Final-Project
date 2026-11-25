@@ -19,8 +19,8 @@ This project is written Java version 25. Some classes in the IO library, such as
      To verify, once in the `src` folder within the `FinalProject` directory, type `ls` and make sure **BOTH** `WordUnscramble.java` and `dictionary.txt` are present. 
   4. In the terminal, type `java WordUnscramble.java` to run the program.
 
-```Example of Game Running: 
-
+Example of Game Running: 
+```
 WELCOME TO SPANISH WORD UNSCRAMBLE
 
 Definition: food
