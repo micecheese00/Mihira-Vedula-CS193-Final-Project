@@ -9,17 +9,17 @@ Many people often find memorizing a long lists of words boring, and this game wi
 A file of vocabulary words will be processed and scrambled. Only 15 words will appear on the screen one at a time. For each word, there is user input where the user can enter their answer. If it is correct, a point will increase. After 15 words, the game will end and the score will be displayed. In the first version, there is only going to be one given vocab list processed.
 
 ## Tech stack for this project: 
-This project is written Java version 25. Some classes in the IO library, such as IOException, BufferedReader, and FileReader are used. Other than that, the ArrayList and Collections classes are used from the java.util library.
+This project is written in Java version 25. Some classes in the `java.io` library, such as `IOException`, `BufferedReader`, and `FileReader` are used. Other than that, the `ArrayList` and `Collections` classes are used from the `java.util` library.
 
 ## How to run and access the code & Example of game:
   1. **Cloning the repo**
      * Open the terminal, and type `git clone https://github.com/micecheese00/Mihira-Vedula-CS193-Final-Project`
-     * Type `cd FinalProject/src`
+     * Type `cd Mihira-Vedula-CS193-Final-Project/FinalProject/src` to move into the `src` folder within `FinalProject`
   2. Make sure the `dictionary.txt` file is within the **SAME DIRECTORY** as `WordUnscramble.java` (in the `src` folder within the `FinalProject` folder).
      To verify, once in the `src` folder within the `FinalProject` directory, type `ls` and make sure **BOTH** `WordUnscramble.java` and `dictionary.txt` are present. 
-  4. In the terminal, type `java WordUnscramble.java` to run the program.
+  4. In the terminal, type `javac WordUnscramble.java` to compile the program. Then, type `java WordUnscramble` to run the program. 
 
-Example of Game Running: 
+Example of Game Running in the Terminal: 
 ```
 WELCOME TO SPANISH WORD UNSCRAMBLE
 
