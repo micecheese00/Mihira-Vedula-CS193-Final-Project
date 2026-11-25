@@ -19,9 +19,9 @@ This project is written Java version 25. Some classes in the IO library, such as
      To verify, once in the `src` folder within the `FinalProject` directory, type `ls` and make sure **BOTH** `WordUnscramble.java` and `dictionary.txt` are present. 
   4. In the terminal, type `java WordUnscramble.java` to run the program.
 
-Example of Game Running: 
+```Example of Game Running: 
 
-`WELCOME TO SPANISH WORD UNSCRAMBLE
+WELCOME TO SPANISH WORD UNSCRAMBLE
 
 Definition: food
 Scrambled word: dicaom
@@ -131,7 +131,8 @@ restaurante  resteraunt  aunsterater  resteraunte
 cocina  kitchen  acinco  cocina
 plato  dish  oaptl  oplat
 vegetariano  vegetarian  vnteoaargie  vegeniario
-carne  meat  acenr  carne`
+carne  meat  acenr  carne
+```
      
 ## Roadmap: 
 - [ ] having more vocabulary list options
