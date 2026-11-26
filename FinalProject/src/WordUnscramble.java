@@ -100,9 +100,9 @@ void main() {
     // Outputs different feedback or encouragement based on the score (feature)
     if (points == wordCounter) {
         IO.println("Perfect score!\n");
-    } else if (points/wordCounter >= 0.7) {
+    } else if (points * 1.0 / wordCounter >= 0.7) {
         IO.println("Great job!\n");
-    }else if (points/wordCounter >= 0.45) {
+    }else if (points * 1.0 / wordCounter >= 0.45) {
         IO.println("Good job, but keep on practicing!\n");
     } else {
         IO.println("Keep practicing!\n");
