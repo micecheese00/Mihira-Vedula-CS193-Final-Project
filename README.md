@@ -31,7 +31,7 @@ This project is written in Java version 25. Some classes in the `java.io` librar
      To verify, once in the `src` folder within the `FinalProject` directory, type `ls` and make sure **BOTH** `WordUnscramble.java` and `dictionary.txt` are present. 
   4. In the terminal, type `javac WordUnscramble.java` to compile the program. Then, type `java WordUnscramble.java` to run the program. 
 
-Example of Game Running in the Terminal: 
+### Example of Game Running in the Terminal: 
 ```
 WELCOME TO SPANISH WORD UNSCRAMBLE
 
