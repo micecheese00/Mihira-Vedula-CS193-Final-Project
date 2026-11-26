@@ -6,7 +6,15 @@ This project is a language learning (specifically vocabulary learning) game wher
 Many people often find memorizing a long lists of words boring, and this game will allow people to learn vocabulary words and new languages in a motivating and fun manner. The constant thinking of the word would cause them to remember the word better, and the win would make them remember how they had solved the problem and how they had remembered the word from before, increasing motivation and enjoyment.
 
 ## How it works: 
-A file of vocabulary words will be processed and scrambled. Only 15 words will appear on the screen one at a time. For each word, there is user input where the user can enter their answer. If it is correct, a point will increase. After 15 words, the game will end and the score will be displayed. In the first version, there is only going to be one given vocab list processed.
+A file of vocabulary words will be processed so that empty lines, words with less than 4 letters, and invalid lines (lines that have anything other than a word and definition) are skipped. If the file is empty or has less than 2 or fewer words, the program returns with an appropriate error message. 
+
+There is a function called `scrambleWord` that scrambles a given word by converting the string to a character array list, applying the `Collections.shuffle()` method, and converting it back to a string. 
+
+Only 15 words will be considered, so 15 rounds in the game, even if there are more in the file. If there are less than 15 words in the `wordsList` array list, it would loop for the size of `wordsList`. Each word in `wordsList` is scrambled using the  `scrambleWord ` function until it is a unique, scrambled word. That scrambled word is added to an array list called `scrambledWordsList`. The definition of the word is displayed, followed by the scrambled word. User input is asked, where the user can enter their guess. If it is matches the unscrambled word, a point will increase. If incorrect, the point value will not change. After each individual round, instant feedback is provided, saying "Correct" or "Incorrect" and saying what the correct answer is. 
+
+After 15 words, the game ends, printing "Game Over!" and the score will be displayed, with the maximum points being 15 if there are 15 or more words or if less than 15, however many words there are. Feedback is given based on the score. There is a summary printed at the end with each word, definition, scrambled word, and user answer printed in every line. 
+
+In the first version, there is only going to be one given vocab list processed.
 
 ## Tech stack for this project: 
 This project is written in Java version 25. Some classes in the `java.io` library, such as `IOException`, `BufferedReader`, and `FileReader` are used. Other than that, the `ArrayList` and `Collections` classes are used from the `java.util` library.
