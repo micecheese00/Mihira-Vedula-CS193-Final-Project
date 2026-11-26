@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-// CS193 Final Project
-// Spanish Word Unscrambling Game
-// @version 11/24/2026
-// @author Mihira Vedula
+/** CS193 Final Project
+ * Spanish Word Unscrambling Game
+ * @version 11/24/2026
+ * @author Mihira Vedula
+ */
 void main() {
     ArrayList<String> wordsList = new ArrayList<>();
     ArrayList<String> definitionsList = new ArrayList<>();
@@ -97,15 +98,16 @@ void main() {
         IO.println("Your score: " + points + "/" + 15);
     }
     // Outputs different feedback or encouragement based on the score (feature)
-    if (points == 15) {
+    if (points == wordCounter) {
         IO.println("Perfect score!\n");
-    } else if (points >= 10) {
+    } else if (points/wordCounter >= 0.7) {
         IO.println("Great job!\n");
-    }else if (points >= 7) {
+    }else if (points/wordCounter >= 0.45) {
         IO.println("Good job, but keep on practicing!\n");
     } else {
         IO.println("Keep practicing!\n");
     }
+
 
     // Below displays the stats of the game for all rounds for review and user improvement (feature)
     IO.println("View your answer details below in the order of " +
