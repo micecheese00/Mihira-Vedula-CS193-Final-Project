@@ -45,6 +45,7 @@ void main() {
         }
         if (wordsList.size() <= 2) {
             IO.println("Too few words. Please update list. ");
+            return;
         }
     } catch (IOException e) {
         IO.println("Unable to read file.");
@@ -53,6 +54,7 @@ void main() {
         IO.println("Unable to execute program.");
         return;
     }
+
     // game starts below
     IO.println("\nWELCOME TO SPANISH WORD UNSCRAMBLE");
     while (wordCounter < 15 && wordCounter < wordsList.size()) {
