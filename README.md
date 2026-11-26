@@ -16,6 +16,9 @@ After 15 words, the game ends, printing "Game Over!" and the score will be displ
 
 In the first version, there is only going to be one given vocab list processed.
 
+<img width="2550" height="3300" alt="ProjectDiagramCS193FinalProject drawio" src="https://github.com/user-attachments/assets/001cf40c-4b36-47fb-8652-fb3bf55eefda" />
+
+
 ## Tech stack for this project: 
 This project is written in Java version 25. Some classes in the `java.io` library, such as `IOException`, `BufferedReader`, and `FileReader` are used. Other than that, the `ArrayList` and `Collections` classes are used from the `java.util` library.
 
@@ -25,7 +28,7 @@ This project is written in Java version 25. Some classes in the `java.io` librar
      * Type `cd Mihira-Vedula-CS193-Final-Project/FinalProject/src` to move into the `src` folder within `FinalProject`
   2. Make sure the `dictionary.txt` file is within the **SAME DIRECTORY** as `WordUnscramble.java` (in the `src` folder within the `FinalProject` folder).
      To verify, once in the `src` folder within the `FinalProject` directory, type `ls` and make sure **BOTH** `WordUnscramble.java` and `dictionary.txt` are present. 
-  4. In the terminal, type `javac WordUnscramble.java` to compile the program. Then, type `java WordUnscramble` to run the program. 
+  4. In the terminal, type `javac WordUnscramble.java` to compile the program. Then, type `java WordUnscramble.java` to run the program. 
 
 Example of Game Running in the Terminal: 
 ```
