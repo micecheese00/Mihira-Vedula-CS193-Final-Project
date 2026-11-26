@@ -16,7 +16,7 @@ After 15 words, the game ends, printing "Game Over!" and the score will be displ
 
 In the first version, there is only going to be one given vocab list processed.
 
-<img width="2550" height="3300" alt="ProjectDiagramCS193FinalProject drawio" src="https://github.com/user-attachments/assets/001cf40c-4b36-47fb-8652-fb3bf55eefda" />
+<img width="6399" height="6156" alt="Size3xProjDiagram drawio" src="https://github.com/user-attachments/assets/31164f58-8a88-4a16-94d1-820d04348569" />
 
 
 ## Tech stack for this project: 
