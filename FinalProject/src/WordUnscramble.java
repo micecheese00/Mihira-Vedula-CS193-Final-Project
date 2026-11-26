@@ -108,7 +108,6 @@ void main() {
         IO.println("Keep practicing!\n");
     }
 
-
     // Below displays the stats of the game for all rounds for review and user improvement (feature)
     IO.println("View your answer details below in the order of " +
             "the correct word and definition, the scrambled word, and your answer: ");
